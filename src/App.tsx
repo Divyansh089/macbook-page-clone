@@ -1,5 +1,4 @@
 import './App.scss';
-
 import { getAnalytics } from 'firebase/analytics';
 import { FirebaseOptions, initializeApp } from 'firebase/app';
 import { gsap } from 'gsap';
@@ -21,7 +20,6 @@ import PerformanceIntro from 'components/performance/PerformanceIntro';
 import useScrollToTopOnRefresh from 'hooks/useScrollToTopOnRefresh';
 
 gsap.registerPlugin(ScrollTrigger);
-
 const firebaseConfig: FirebaseOptions = JSON.parse(
   process.env.REACT_APP_API_KEY || '{}',
 );
